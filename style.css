@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-h1{
-    font-family: 'Rum Raisin', sans-serif;
+#logo{
+    width: 180px;
+    cursor: pointer;
+    margin-right: auto;
 }
 
 body{
+    /* NECESSARIO PER UN BACKGROUND RESPONSIVE */
     background-image: url('../odin-recipes/images/background.jpg'); /* INSERISCI PRIMA "../" POI PREMI SU INVIO PER SELEZIONARE I PERCORSI */ 
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: fixed;
+    background-size: cover;
+    height: 100vh;
 }
 
 a{
@@ -23,8 +26,29 @@ ul{
     text-transform: uppercase;
 }
 
-li:hover a{
-    color: #ff0000;
+#central-txt{
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 120px;
 }
 
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover{
+    color: #f00;
+}
