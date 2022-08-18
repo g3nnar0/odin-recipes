@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-#logo{
+#logo {
     width: 180px;
     cursor: pointer;
     margin-right: auto;
 }
 
-body{
+body {
     /* NECESSARIO PER UN BACKGROUND RESPONSIVE */
-    background-image: url('../odin-recipes/images/background.jpg'); /* INSERISCI PRIMA "../" POI PREMI SU INVIO PER SELEZIONARE I PERCORSI */ 
+    background-image: url('../odin-recipes/images/background.jpg');
+    /* INSERISCI PRIMA "../" POI PREMI SU INVIO PER SELEZIONARE I PERCORSI */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 
-a{
-    text-decoration: none; /* TOLGO LA SOTTOLINEATURA AL LINK */
-    color: #000;
+a {
+    text-decoration: none;
+    /* TOLGO LA SOTTOLINEATURA AL LINK */
+    color: #fff; 
 }
 
-ul{
-    list-style-type: none; /* TOLGO I PALLINI DALLA LISTA */
+ul {
+    list-style-type: none;
+    /* TOLGO I PALLINI DALLA LISTA */
     font-family: sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-#central-txt{
+#central-txt {
     text-align: center;
     margin-top: 10%;
     color: #fff;
@@ -34,21 +37,46 @@ ul{
     font-size: 120px;
 }
 
-header{
+header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.navlinks li{
+.navlinks .mainLinks {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.navlinks li a{
+.navlinks li a {
     transition: all 0.3s ease 0s;
 }
 
-.navlinks li a:hover{
+.navlinks li a:hover {
     color: #f00;
 }
+
+#navbar{
+    position: fixed; /* IN QUESTO MODO HO FISSATO LA MIA NAVBAR */
+}
+
+.ddMenu{
+    position: absolute;
+    width: auto;
+    background: none;
+    margin-left: 77px;
+    margin-top: 10px;
+    /*display: none;*/
+    /*visibility: hidden;*/
+}
+
+.recipes{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
