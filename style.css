@@ -18,13 +18,13 @@ body {
 a {
     text-decoration: none;
     /* TOLGO LA SOTTOLINEATURA AL LINK */
-    color: #fff; 
+    color: #000;
 }
 
 ul {
     list-style-type: none;
     /* TOLGO I PALLINI DALLA LISTA */
-    font-family: sans-serif;
+    font-family: bold sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -43,7 +43,7 @@ header {
     align-items: center;
 }
 
-.navlinks .mainLinks {
+.navlinks li {
     display: inline-block;
     padding: 0px 20px;
 }
@@ -53,30 +53,53 @@ header {
 }
 
 .navlinks li a:hover {
-    color: #f00;
+    color: #fff;
 }
 
-#navbar{
-    position: fixed; /* IN QUESTO MODO HO FISSATO LA MIA NAVBAR */
+#navbar {
+    position: fixed;
+    /* IN QUESTO MODO HO FISSATO LA MIA NAVBAR */
 }
 
-.ddMenu{
+/*
+.subMenu{
     position: absolute;
-    width: auto;
-    background: none;
-    margin-left: 77px;
-    margin-top: 10px;
-    /*display: none;*/
-    /*visibility: hidden;*/
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    margin-left: 50px;
+    
+    
 }
 
 .recipes{
     margin-top: 20px;
 }
+*/
 
+#title{
+    text-align: center;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
 
+#container{
+    display: flex;
+    align-items: center;
+}
 
+.img{
+    width: 33%;
+    cursor: pointer;
 
+}
 
-
-
+.child{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 33.33%;
+    border: 1px solid #000;
+}
