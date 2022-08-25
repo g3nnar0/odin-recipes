@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    /* NECESSARIO PER UN BACKGROUND RESPONSIVE */
+    background-image: url('../odin-recipes/images/background.jpg');
+    /* INSERISCI PRIMA "../" POI PREMI SU INVIO PER SELEZIONARE I PERCORSI */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+#title{
+    text-align: center;
+    color: #f7f7f7;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+
+#recipe-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image{
+    width: 30%;
+    height: auto;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 45px;
+    color: #f7f7f7;
+}
+
+#ingredients{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f7f7f7;
+}
+
+
+
+
